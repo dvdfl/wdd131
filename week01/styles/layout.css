@@ -1,19 +1,23 @@
 body {
     display: grid;
     height: 100vh;
-    grid: auto auto 1fr auto / auto 300px;
+    grid: auto 1fr auto / auto 300px;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header {
     background-color: #7584BF;
     color: white;
-    padding: 1rem;
     grid-column: 1/3;
-    font-size: 1.2em;
+    
     font-weight: bold ;
 }
-nav{ display: flex;
+header h1{
+    margin: 1rem;
+    text-align: center;
+}
+nav{ 
+    display: flex;
     background-color: #555042;
     grid-column: 1/3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,15 +33,25 @@ nav a {
 }
 main{
     background-color: white;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 .aside {
     background-color: #AA9D76;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+.aside h2{
+    text-align: center;
 }
 footer {
     background-color: #6E7180;
     grid-column: 1/3;
     padding: 1rem;
     color: white;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.footnote {
+    font-size: smaller;
 }
